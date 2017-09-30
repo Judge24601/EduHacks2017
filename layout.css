@@ -1,0 +1,39 @@
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  text-align: center;
+}
+
+.flex-container > * {
+    padding: none;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+header {background: #4d004d}
+h2{
+  font-family: Verdana,sans-serif;
+  color: #e6e6e6
+}
+.nav {background: #333}
+.nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav li{
+  float: left;
+}
+.nav li a{
+  display: block;
+  font-family: Verdana,sans-serif;
+  color: white;
+  padding:  16px;
+  text-decoration: none
+}
+.nav li a:hover{
+  background-color: #4d4d4d;
+}
