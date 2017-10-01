@@ -1,0 +1,7 @@
+.sensor_sidebar{
+  display: -webkit-flex;
+  display: flex;
+}
+.sensor_sidebar > *{
+
+}
