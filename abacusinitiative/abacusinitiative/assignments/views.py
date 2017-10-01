@@ -20,5 +20,3 @@ class questionView():
         return render(request, 'templates/questionView.html', {
             question, question.parent_question, forum_posts
         }, content_type='application/xhtml+xml')
-
-    de

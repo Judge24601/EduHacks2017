@@ -19,5 +19,5 @@ from assignments.views import questionView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #temporary
-    url(r'^assignments', questionView.get(), name='question'),
+    url(r'^assignments', questionView.get(self, request), name='question'),
 ]
