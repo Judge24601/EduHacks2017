@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from assignments.views import questionView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    #temporary
+    url(r'^assignments', questionView.get(), name='question'),
 ]
