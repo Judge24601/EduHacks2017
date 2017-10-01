@@ -1,3 +1,4 @@
+#!/usr/bin/python
 def __init__(self, name, gates, task, completionState):
     self.name = name #string
     self.gates = gates #string list
