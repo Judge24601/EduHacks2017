@@ -8,11 +8,11 @@ def NOT(self, inputA):
     if inputA == True:
         return False
     else:
-        return True:
+        return True
 
 #basic AND gate function (A&B)
 def AND(self, inputA, inputB):
-    if inputA == True && inputB == True:
+    if inputA == True and inputB == True:
         return True
     else:
         return False
@@ -37,7 +37,7 @@ def NOR(self, inputA, inputB):
 
 #basic NAND (not both) gate function (~(A&B))
 def NAND(self, inputA, inputB):
-    if inputA == True && inputB == True:
+    if inputA == True and inputB == True:
         return False
     else:
         return True
