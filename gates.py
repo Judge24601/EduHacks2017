@@ -43,14 +43,14 @@ def NAND(self, inputA, inputB):
         return True
 
 #basic XNOR (equality) gate function ((~A&~B)v(A&B))
-def NAND(self, inputA, inputB):
+def XNOR(self, inputA, inputB):
     if inputA == inputB:
         return True
     else:
         return False
 
 #basic XOR (exclusive or) gate function (~((~A&~B)v(A&B)))
-def NAND(self, inputA, inputB):
+def XOR(self, inputA, inputB):
     if inputA == inputB:
         return False
     else:
