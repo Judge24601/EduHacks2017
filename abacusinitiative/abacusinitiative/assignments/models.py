@@ -52,7 +52,7 @@ class InstructorQuestion (models.Model):
     )
     text = models.TextField()
 
-class Forum_Post(models.Model):
+class ForumPost(models.Model):
     forum_post_id = models.PositiveIntegerField(
         primary_key = True,
         db_index = True,
@@ -62,13 +62,13 @@ class Forum_Post(models.Model):
     #    'Student',
     #    on_delete = models.CASCADE,
     #)
-    linked_q = models.ForeignKey(
+    linked_question = models.ForeignKey(
         'InstructorQuestion',
         on_delete = models.CASCADE,
     )
     posts = models.Manager()
 
-class Forum_Response(models.Model):
+class ForumResponse(models.Model):
     forum_response_id = models.PositiveIntegerField(
         primary_key = True,
         db_index = True,
@@ -79,11 +79,11 @@ class Forum_Response(models.Model):
     #    on_delete = models.CASCADE,
     #)
     response_to = models.ForeignKey(
-        'Forum_Post',
+        'ForumPost',
         on_delete = models.CASCADE,
     )
 
-class Instructor_Response(models.Model):
+class InstructorResponse(models.Model):
     instructor_response_id = models.PositiveIntegerField(
         primary_key = True,
         db_index = True,
@@ -94,6 +94,6 @@ class Instructor_Response(models.Model):
     #    on_delete = models.CASCADE,
     #)
     response_to = models.ForeignKey(
-        'Forum_Post',
+        'ForumPost',
         on_delete = models.CASCADE,
     )
