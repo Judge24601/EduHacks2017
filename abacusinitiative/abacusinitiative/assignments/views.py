@@ -1,6 +1,6 @@
 from django.shortcuts import render
-#from django.url import reverse, resolve
-#from django.http import HttpRequest, HttpResponse
+from django.url import resolve
+from django.http import HttpRequest
 import models
 
 
@@ -9,7 +9,7 @@ class questionView():
     def get(self, request):
         #role = !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         role = 'student'
-        assignment_id, question_id = request
+        assignment_id, question_id = resolve(request.path)
         if role == 'student' :
             #assignment = StudentAssignment.objects.filter(student_assignment_id)
             question = StudentQuestion.objects.filter(question_id)
@@ -20,3 +20,5 @@ class questionView():
         return render(request, 'templates/questionView.html', {
             question, question.parent_question, forum_posts
         }, content_type='application/xhtml+xml')
+
+    de
