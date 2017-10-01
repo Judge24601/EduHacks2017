@@ -1,0 +1,13 @@
+{% extends layout.html %}
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="view_lesson.css">
+{% endblock %}
+{% block content %}
+  <div class = "sensor_sidebar">
+    {% for sensor in sensors %}
+      <div class = "sensor">
+        {{ sensor }}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
