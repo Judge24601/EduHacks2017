@@ -32,14 +32,18 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'registration',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
     'django.url',
     'assignments',
+    'accounts',
 ]
+ACCOUNT_ACTIVATION_DAYS = 7
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
