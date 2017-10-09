@@ -1,2 +1,2 @@
 # EduHacks2017
-For the hackest of thons
+Website that allows teachers to upload assignments but with added features that allow students to learn better in an easily accessible way. 
