@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from assignments.views import questionView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/', include('registration.backends.default.urls')),
-
+    #temporary
+    url(r'^assignments', questionView.get(self, request), name='question'),
 ]
